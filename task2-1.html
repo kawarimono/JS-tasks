@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- 
+    **Задача**
+    Напишите программу, которая принимает число от пользователя и определяет, положительное оно, отрицательное или равно нулю.
+  -->
+</head>
+
+<body>
+  <script>
+    const num = +prompt("Введите число", 0);
+
+    if (!Number.isNaN(num)) {
+      if (num > 0) {
+        alert("Число больше нуля");
+      } else if (num < 0) {
+        alert("Число меньше нуля");
+      } else {
+        alert("Число равно нулю");
+      }
+    } else {
+      alert("Вы ввели не число!");
+    }
+  </script>
+</body>
+
+</html>

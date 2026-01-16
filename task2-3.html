@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- 
+    Напишите программу, которая принимает на вход три числа и выводит наибольшее из них.
+  -->
+</head>
+
+<body>
+  <script>
+    const nums = prompt("Введите три числа через пробел (можно и больше)")
+      .split(" ")
+      .map((num) => +num);
+
+    alert(Math.max(...nums));
+  </script>
+</body>
+
+</html>

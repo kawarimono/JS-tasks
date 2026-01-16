@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- 
+    Напишите программу, которая запрашивает у пользователя строку,
+    проверяет, является ли она числом, и определяет, больше это число, меньше или равно 100.
+  -->
+</head>
+
+<body>
+  <script>
+    const num = +prompt("Введите число", 0);
+
+    if (!Number.isNaN(num)) {
+      if (num > 100) {
+        alert("Число больше 100");
+      } else if (num < 100) {
+        alert("Число меньше 100");
+      } else {
+        alert("Число равно 100");
+      }
+    } else {
+      alert("Вы ввели не число!");
+    }
+  </script>
+</body>
+
+</html>
