@@ -18,11 +18,11 @@
     for (let day = 1; day <= 5; day++) {
       const classesNumber = +prompt("Количество пар");
 
-      if (classesNumber === 0) {
-        totalSleepTime += dayHours;
-      } else if (classesNumber > 5 || Number.isNaN(classesNumber) || classesNumber < 0) {
+      if (classesNumber > 5 || Number.isNaN(classesNumber) || classesNumber < 0) {
         alert("Ошибка!");
         break;
+      } else if (classesNumber === 0) {
+        totalSleepTime += dayHours;
       } else {
         totalSleepTime += dayHours - classesNumber * classDuration - travelTime * 2;
       }

@@ -18,7 +18,7 @@
     const name = prompt("Введите имя");
     const age = +prompt("Введите возраст");
 
-    if (isNaN(age)) {
+    if (Number.isNaN(age)) {
       alert("Ошибка: возраст не число!");
     } else {
       if (age < 18) {

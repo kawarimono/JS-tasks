@@ -14,7 +14,7 @@
   <script>
     const nums = prompt("Введите три числа через пробел (можно и больше)")
       .split(" ")
-      .map((num) => +num);
+      .map(Number);
 
     alert(Math.max(...nums));
   </script>
