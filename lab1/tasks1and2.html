@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks 1 and 2</title>
+</head>
+
+<body>
+  <script>
+    const myName = 'Ki';
+    const programmingLanguage = 'JavaScript';
+    const courseCreatorName = 'Чеботов Н.М.';
+    const reasonText = 'это интересно';
+    const numberOfMonth = 6;
+
+    let myInfoText = `Всем привет! Меня зовут, ${myName}. Сейчас я изучаю язык программирования ${programmingLanguage} на курсе по ${programmingLanguage} у ${courseCreatorName}. Я хочу стать веб-разработчиком, потому что ${reasonText}. До этого я изучал ${programmingLanguage} ${numberOfMonth} месяцев. Я уверен, что пройду данный курс до конца!`;
+
+    console.log(myInfoText);
+
+    // task 2
+    myInfoText = myInfoText.replaceAll('JavaScript', 'JAVASCRIPT');
+    console.log(myInfoText);
+    console.log(myInfoText.length);
+    console.log(myInfoText[0]);
+    console.log(myInfoText[myInfoText.length - 1]);
+  </script>
+</body>
+
+</html>
