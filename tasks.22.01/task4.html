@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task4</title>
+</head>
+
+<body>
+  <script>
+    let i = 0;
+    while (i < 3) {
+      let newStudent = prompt('Введите имя нового студента!');
+      newStudent = newStudent.trim();
+      if (newStudent) {
+        alert(`Добро пожаловать, ${newStudent}!`);
+      }
+      i++;
+    }
+
+    let j = 0;
+    do {
+      let newStudent = prompt('Введите имя нового студента!');
+      newStudent = newStudent.trim();
+      if (newStudent) {
+        alert(`Добро пожаловать, ${newStudent}!`);
+      }
+      j++;
+    } while (j < 3);
+  </script>
+</body>
+
+</html>

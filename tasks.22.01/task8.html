@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task8</title>
+</head>
+
+<body>
+  <script>
+    let password = prompt("Введите пароль");
+
+    let hasUpperCase = /[A-Z]/.test(password);
+    let hasNumber = /\d/.test(password);
+    let isValidLength = password.length >= 3 && password.length <= 20;
+
+    if (hasUpperCase && hasNumber && isValidLength) {
+      alert("Пароль валидный. Добро пожаловать в аккаунт!");
+    } else {
+      alert("Пароль не удовлетворяет условиям! Перезагрузите страницу и попробуйте ввести его еще раз.");
+    }
+  </script>
+</body>
+
+</html>

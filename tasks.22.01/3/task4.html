@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task4</title>
+</head>
+
+<body>
+  <script>
+    function checkQuestionAnswer(question, correctAnswer) {
+      let userAnswer = prompt(question).toLowerCase().trim();
+      let normalizedCorrectAnswer = correctAnswer.toLowerCase().trim();
+
+      if (userAnswer === normalizedCorrectAnswer) {
+        alert("Ответ верный");
+      } else {
+        alert("Ответ неверный");
+      }
+    }
+
+    checkQuestionAnswer('Арбуз это фрукт или ягода?', 'Ягода');
+    checkQuestionAnswer('Сколько в среднем зубов у взрослого человека?', '32');
+    checkQuestionAnswer('Как называется самая маленькая птица в мире?', 'Колибри');
+  </script>
+</body>
+
+</html>

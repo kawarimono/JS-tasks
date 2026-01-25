@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+</head>
+
+<body>
+  <script>
+    function getName1(name) {
+      return `Имя равно ${name}`;
+    }
+
+    const getName2 = function (name) {
+      return `Имя равно ${name}`;
+    }
+
+    const getName3 = (name) => {
+      return `Имя равно ${name}`;
+    }
+
+    console.log(getName1("Алексей"));
+    console.log(getName2("Борис"));
+    console.log(getName3("Виктор"));
+  </script>
+</body>
+
+</html>
